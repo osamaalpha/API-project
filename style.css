@@ -234,5 +234,13 @@ h2{
     }  
     .close-button{
         margin-left: 50%;
-    }  
+    } 
+    .sides-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12%;
+
+    } 
 }

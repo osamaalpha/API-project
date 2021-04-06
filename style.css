@@ -231,5 +231,8 @@ h2{
     }
     .div-select-competition , .search-wrapper{
         margin: 2%;
-    }    
+    }  
+    .close-button{
+        margin-left: 92%;
+    }  
 }

@@ -1,0 +1,245 @@
+body, html{
+    margin:0;
+    padding: 0;
+   height: 100%;
+}
+.bg{
+    background-image: url("https://wallpapercave.com/wp/wp3972164.jpg") ;
+    height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*{
+    font-family: "Trirong", serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.head-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #023B77;
+    padding-right: 2%;
+    padding-left: 0.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
+.head-title h1{
+    font-size: 4vw;
+}
+.labels h2{
+    font-size: 3vw;
+}
+.logo{
+    width:7%;
+}
+.div-basic{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 3%; 
+    margin-top: 10%;
+}
+.div-select-competition , .search-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.select-competition{
+    color:black;
+    font-size: 1.5vw;
+}
+.match-title{
+    font-size:3vw;
+    font-weight: bolder;
+}
+.div-match-title{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 3%;
+    margin-left: 1%;
+    flex-wrap: wrap;
+}
+.match-video{
+    width:50%;
+    margin: 2%;  
+}
+.div-match-video{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.div-sides,.div-follow,.div-date{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+.sides,.follow,.date{
+    font-size: 2vw;
+}
+.sizing{
+    max-width:30%;
+}
+h2{
+    font-size:5vw;
+    color: white;
+    margin-bottom: 5%;
+}
+p,a,.submit-team{
+  color:aliceblue;
+  cursor: pointer;  
+}
+.highlights{
+  color:aliceblue;  
+}
+.video-error{
+    color:aliceblue;
+    margin-top: 5%;  
+    display: none;
+  }
+.match-error{
+    color:aliceblue;
+    display: none;  
+}
+a{
+    text-decoration: none !important;
+    color:white !important;
+}
+a:hover{
+    color: red !important;
+}
+button{
+    color: white !important;
+}
+h2{
+    font-weight: bolder;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 2;
+    background-image: url("https://www.wallpapertip.com/wmimgs/53-533436_soccer-soccer-wallpaper-football-field-in-cambodia.jpg") ;
+    height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 67%; 
+    max-height: 95%; 
+    overflow-y: scroll;
+}
+  .popup-active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+   .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 97%;
+    margin-top: 1%;
+  }
+  .gray-background {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+.gray-background-active {
+  opacity: 1;
+  pointer-events: all;
+}
+.api-error-alert{
+    color: white;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 2vw;
+    display: none;
+}
+.search-team-error{
+    color: white;
+    font-size: 2vw;
+    display: none;
+}
+.reload{
+    margin-top:2%;
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        width:15%;
+    }
+    .head-title h1{
+        font-size: 6vw;
+    }
+    .labels h2{
+        font-size: 4.5vw;
+    }
+    .select-competition{
+        height: 50%;
+        font-size: .6rem;
+    }
+    .sides,.follow,.date{
+        font-size: 3.5vw;
+    }
+    .match-title{
+        font-size: 5vw;
+    }
+    .popup{
+        width:98%;
+        max-height: 70%;
+    }
+    .div-basic{
+        flex-direction: column;
+    }
+    .div-select-competition , .search-wrapper{
+        margin: 2%;
+    }  
+    .close-button{
+        margin-left: 50%;
+    } 
+    .sides-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-follow{
+        margin-left: 5%;
+    } 
+}

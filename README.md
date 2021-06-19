@@ -6,8 +6,8 @@ Football week catchup app using JavaScript
 
 # Description
 
-<h2>Single page application making use of scorebat API showing all matches played last week in all football competitions with highlights </h2>
+<h5>Single page application making use of scorebat API showing all matches played last week in all football competitions with highlights </h5>
 
 ## Using ScoreBat API <a href="https://www.scorebat.com/video-api/">check it out</a>
 
-<a href="https://osamaalpha.github.io/API-project/">check out the demo</a>
+<h3><a href="https://osamaalpha.github.io/API-project/">check out the demo</a></h3>
